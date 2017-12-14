@@ -1,0 +1,176 @@
+snippet <?
+	<?php
+	${0}
+snippet ns
+	namespace ${0}
+snippet fn
+	function ${1}(${2}) {
+		${0}
+	}
+
+snippet met
+	public function ${1}(${2})
+	{
+		${0}
+	}
+
+snippet pmet
+	private function ${1}(${2})
+	{
+		${0}
+	}
+
+snippet promet
+	protected function ${1}(${2})
+	{
+		${0}
+	}
+
+snippet smet
+	public static function ${1}(${2})
+	{
+		${0}
+	}
+
+snippet prosmet
+	protected static function ${1}(${2})
+	{
+		${0}
+	}
+
+snippet if
+	if (${1}):
+		${0}
+	endif; // ${2}
+
+snippet ife
+	if (${1}):
+		${3}
+	else:
+		${0}
+	endif; // ${2}
+
+snippet fe
+	foreach (${1} as ${2}):
+		${0}
+	endforeach; // ${3}
+
+snippet =?
+	= ${1} ? ${2} : ${0};
+snippet $
+	$this->${0}
+snippet test
+	/** @test */
+	public function ${1}()
+	{
+		// GIVEN
+		${2}
+
+		// WHEN
+		${3}
+
+		// THEN
+		${0}
+	}
+
+snippet $ae
+	$this->assertEquals(${1}, ${0});
+snippet $ane
+	$this->assertNotEquals(${1}, ${0});
+snippet $ac
+	$this->assertCount(${1}, ${0});
+snippet $at
+	$this->assertTrue(${0});
+snippet $af
+	$this->assertFalse(${0});
+snippet $an
+	$this->assertNull(${0});
+snippet $ann
+	$this->assertNotNull(${0});
+snippet belongsTo
+	/**
+	 * ${0}
+	 *
+	 * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+	 */
+	public function ${1}()
+	{
+		return $this->belongsTo(${2}::class);
+	}
+
+snippet belongsToMany
+	/**
+	 * ${0}
+	 *
+	 * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+	 */
+	public function ${1}()
+	{
+		return $this->belongsToMany(${2}::class);
+	}
+
+snippet hasOne
+	/**
+	 * ${0}
+	 *
+	 * @return \Illuminate\Database\Eloquent\Relations\HasOne
+	 */
+	public function ${1}()
+	{
+		return $this->hasOne(${2}::class);
+	}
+
+snippet hasMany
+	/**
+	 * ${0}
+	 *
+	 * @return \Illuminate\Database\Eloquent\Relations\HasMany
+	 */
+	public function ${1}()
+	{
+		return $this->hasMany(${2}::class);
+	}
+
+snippet hasManyThrough
+	/**
+	 * ${0}
+	 *
+	 * @return \Illuminate\Database\Eloquent\Relations\HasManyThrough
+	 */
+	public function ${1}()
+	{
+		return $this->hasManyThrough(${2}::class, ${3}::class);
+	}
+
+snippet morphTo
+	/**
+	 * ${0}
+	 *
+	 * @return \Illuminate\Database\Eloquent\Relations\MorphTo
+	 */
+	public function ${1}()
+	{
+		return $this->morphTo();
+	}
+
+snippet morphMany
+	/**
+	 * ${0}
+	 *
+	 * @return \Illuminate\Database\Eloquent\Relations\MorphMany
+	 */
+	public function ${1}()
+	{
+		return $this->morphMany(${2}, '${3}');
+	}
+
+snippet sc
+	Schema::create('${1}', function(Blueprint $table) {
+		$table->increments('id');
+		$table->${0};
+		$table->timestamps();
+	});
+
+snippet foreign
+	$table->integer('${1}')->unsigned();
+	$table->foreign('${2}')->references('id')->on('${0}');
