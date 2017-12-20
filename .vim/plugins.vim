@@ -39,6 +39,7 @@ Plugin 'posva/vim-vue'
 Plugin 'StanAngelOff/php.vim' " php snippets/syntax
 Plugin 'tobyS/pdv' " php documentor
 Plugin 'arnaud-lb/vim-php-namespace' " types use statements for you
+Plugin 'digitaltoad/vim-pug' " pugjs syntax
 " other cool things
 Plugin 'chrisbra/csv.vim' " csv viewer
 
@@ -76,7 +77,7 @@ let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
 
 "----PDV----------"
 let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
-nnoremap <Leader>dd :call pdv#DocumentWithSnip()<CR>
+nnoremap <buffer> <C-a> :call pdv#DocumentWithSnip()<CR>
 
 "-------PHP NAMESPACE--"
 function! IPhpInsertUse()
