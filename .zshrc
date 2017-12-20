@@ -20,8 +20,8 @@ BULLETTRAIN_PROMPT_ORDER=(
 )
 BULLETTRAIN_TIME_12HR=true
 # BULLETTRAIN_PROMPT_CHAR='>>'
-BULLETTRAIN_TIME_BG='black'
-BULLETTRAIN_TIME_FG='white'
+#BULLETTRAIN_TIME_BG='black'
+#BULLETTRAIN_TIME_FG='white'
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
