@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.npm-global/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/home/joshua/.oh-my-zsh
@@ -14,14 +14,14 @@ export ZSH=/home/joshua/.oh-my-zsh
 ZSH_THEME="bullet-train"
 BULLETTRAIN_PROMPT_ORDER=(
   time
-  context
+  #context
   dir
   git
 )
 BULLETTRAIN_TIME_12HR=true
 # BULLETTRAIN_PROMPT_CHAR='>>'
-#BULLETTRAIN_TIME_BG='black'
-#BULLETTRAIN_TIME_FG='white'
+BULLETTRAIN_TIME_BG='black'
+BULLETTRAIN_TIME_FG='white'
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
