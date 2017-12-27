@@ -4,17 +4,19 @@ export PATH=$HOME/bin:/usr/local/bin:$HOME/.npm-global/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH=/home/joshua/.oh-my-zsh
 
-
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME='bira'
-# ZSH_THEME='gallois'
-# ZSH_THEME='mortalscumbag'
-ZSH_THEME="bullet-train"
+
+#ZSH_THEME='mortalscumbag'
+#ZSH_THEME='gallois'
+#ZSH_THEME='bureau'
+#ZSH_THEME='bira'
+#ZSH_THEME="spaceship"
+#ZSH_THEME="bullet-train"
 BULLETTRAIN_PROMPT_ORDER=(
-  time
-  #context
+  #time
+  context
   dir
   git
 )
