@@ -77,7 +77,8 @@ let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
 
 "----PDV----------"
 let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
-nnoremap <buffer> <C-a> :call pdv#DocumentWithSnip()<CR>
+" noremap <buffer> <C-a> :call pdv#DocumentWithSnip()<CR>
+autocmd FileType php noremap <Leader>d :call pdv#DocumentWithSnip()<CR>
 
 "-------PHP NAMESPACE--"
 function! IPhpInsertUse()
