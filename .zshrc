@@ -13,7 +13,7 @@ export ZSH=/home/joshua/.oh-my-zsh
 #ZSH_THEME='bureau'
 #ZSH_THEME='bira'
 #ZSH_THEME="spaceship"
-#ZSH_THEME="bullet-train"
+ZSH_THEME="bullet-train"
 BULLETTRAIN_PROMPT_ORDER=(
   #time
   context
