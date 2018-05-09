@@ -110,7 +110,7 @@ au BufRead,BufNewFile * :ColorHighlight
 " Set custom filetypes "
 au BufRead,BufNewFile *.module set filetype=php
 au BufRead,BufNewFile *.ts set filetype=javascript
-au BufRead,BufNewFile *.vue set filetype=html
+au BufRead,BufNewFile *.vue set filetype=vue
 au BufRead,BufNewFile,BufReadPost *.json set syntax=json
 
 " Set file type fold methods"
