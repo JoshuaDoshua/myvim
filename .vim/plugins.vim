@@ -68,8 +68,10 @@ let g:ctrlp_custom_ignore='node_modules\|DS_Store\|git\|\.sass_cache\|build'
 let g:ctrlp_match_window='min:1,max:30,results:30'
 
 "----NERDTree-----"
-let NERDTreeHijackNetrw=0
-let NERDTreeShowHidden=1
+let g:NERDTreeHijackNetrw=0
+let g:NERDTreeShowHidden=1
+let g:NERDTreeIgnore=['\.swp*','\.swo$']
+"let g:NERDTreeDirArrowExpandable=">"
 " open nerd tree if no file
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
@@ -77,7 +79,22 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 "----DevIcons-----"
 let g:webdevicons_enable=1
 let g:webdevicons_enable_nerdtree=1
-let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
+let g:WebDevIconsNerdTreeAfterGlyphPadding=' '
+let g:WebDevIconsUnicodeDecorateFolderNodes=1
+
+"----NERDTreeSyntaxHighlighting-----"
+"let g:NERDTreeFileExtensionHighlightFullName=1
+let s:vue_green='39AF78'
+let g:NERDTreeExtensionHighlightColor={}
+let g:NERDTreeExtensionHighlightColor['vue']=s:vue_green
+let g:NERDTreeHighlightFolders=1
+let g:NERDTreeHighlightFoldersFullName=1
+"performance issues
+"let g:NERDTreeSyntaxDisableDefaultExtensions=1
+"let g:NERDTreeDisableExactMatchHighlight=1
+"let g:NERDTreeDisablePatternMatchHighlight=1
+"let g:NERDTreeSyntaxEnabledExtensions=['php','js','css','sass','scss','vue']
+let g:NERDTreeHighlightCursorLine=0
 
 "----PDV----------"
 let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
