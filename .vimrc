@@ -17,7 +17,7 @@ set softtabstop=2											" number of spaces for fake indents
 
 "-----------VISUALS--------------"
 colorscheme atom-dark-256
-set guifont=DroidSansMono\ Nerd\ Font\ Book\ 9
+set guifont=DroidSansMono\ Nerd\ Font\ Book\ 20
 set encoding=utf8											" default encoding
 
 set number														" activate line numbers

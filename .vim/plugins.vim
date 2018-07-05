@@ -18,7 +18,6 @@ Plugin 'airblade/vim-gitgutter' " git icons in gutters
 Plugin 'vim-airline/vim-airline' " info bar at bottom
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree' " directory browser
-Plugin 'ryanoasis/vim-devicons' " nerd-font integration
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight' " colored nerd tree
 Plugin 'tpope/vim-sleuth' " auto-adjust indent options based on current file
 Plugin 'Chiel92/vim-autoformat' " quick formatting
@@ -48,6 +47,8 @@ Plugin 'chrisbra/csv.vim' " csv viewer
 " Plugin 'tpope/vim-abolish' " find/replace easily
 " Plugin 'vim-syntastic/syntastic' " syntax checking
 
+Plugin 'ryanoasis/vim-devicons' " nerd-font integration
+
 " All of your plugins must be added before the following line
 call vundle#end()		" required
 filetype plugin indent on	" required
@@ -69,6 +70,9 @@ let g:ctrlp_match_window='min:1,max:30,results:30'
 "----NERDTree-----"
 let NERDTreeHijackNetrw=0
 let NERDTreeShowHidden=1
+" open nerd tree if no file
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 "----DevIcons-----"
 let g:webdevicons_enable=1
