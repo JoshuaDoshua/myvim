@@ -15,13 +15,14 @@ export ZSH=/home/joshua/.oh-my-zsh
 #ZSH_THEME="spaceship"
 ZSH_THEME="bullet-train"
 BULLETTRAIN_PROMPT_ORDER=(
-  #time
+  status
   context
   dir
   git
+  time
 )
 #BULLETTRAIN_TIME_12HR=true
-# BULLETTRAIN_PROMPT_CHAR='>>'
+#BULLETTRAIN_PROMPT_CHAR='>>'
 BULLETTRAIN_TIME_BG='black'
 BULLETTRAIN_TIME_FG='white'
 
