@@ -21,6 +21,7 @@ Plugin 'scrooloose/nerdtree' " directory browser
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight' " colored nerd tree
 Plugin 'tpope/vim-sleuth' " auto-adjust indent options based on current file
 Plugin 'Chiel92/vim-autoformat' " quick formatting
+Plugin 'majutsushi/tagbar' " vim tagbar document summary
 
 " common snippets
 Plugin 'ervandew/supertab' " tab completions

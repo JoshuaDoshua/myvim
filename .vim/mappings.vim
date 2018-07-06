@@ -45,6 +45,9 @@ nmap <C-E> :CtrlPMRU<cr>
 " Show GitGutter line diff highlights
 nmap <Leader>gd :GitGutterLineHighlightsToggle<cr>
 
+" Toggle Tag Bar document summary
+nmap <Leader>ds :TagbarToggle<cr>
+
 " PDV document
 autocmd FileType php noremap <Leader>d :call pdv#DocumentWithSnip()<CR>
 " autocmd FileType php noremap <buffer> <C-a> :call pdv#DocumentWithSnip()<CR>
