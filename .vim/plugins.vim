@@ -47,9 +47,9 @@ Plugin 'chrisbra/csv.vim' " csv viewer
 " Plugin 'tpope/vim-abolish' " find/replace easily
 " Plugin 'vim-syntastic/syntastic' " syntax checking
 
+" call last
 Plugin 'ryanoasis/vim-devicons' " nerd-font integration
 
-" All of your plugins must be added before the following line
 call vundle#end()		" required
 filetype plugin indent on	" required
 
@@ -61,7 +61,7 @@ let g:airline_theme='minimalist'
 "let g:autotagTagsFile=".tags"
 
 "----Colorizer----"
-let g:colorizer_auto_filetype='css,html,scss,sass,less'
+let g:colorizer_auto_filetype='css,html,scss,sass,less,vue,js'
 
 "----CTRLP--------"
 let g:ctrlp_custom_ignore='node_modules\|DS_Store\|git\|\.sass_cache\|build'
@@ -98,22 +98,3 @@ let g:NERDTreeHighlightCursorLine=0
 
 "----PDV----------"
 let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
-" noremap <buffer> <C-a> :call pdv#DocumentWithSnip()<CR>
-autocmd FileType php noremap <Leader>d :call pdv#DocumentWithSnip()<CR>
-
-"-------PHP NAMESPACE--"
-function! IPhpInsertUse()
-	call PhpInsertUse()
-	call feedkeys('a',  'n')
-endfunction
-autocmd FileType php inoremap <Leader>n <Esc>:call IPhpInsertUse()<CR>
-autocmd FileType php noremap <Leader>n :call PhpInsertUse()<CR>
-
-function! IPhpExpandClass()
-	call PhpExpandClass()
-	call feedkeys('a', 'n')
-endfunction
-autocmd FileType php inoremap <Leader>f <Esc>:call IPhpExpandClass()<CR>
-autocmd FileType php noremap <Leader>f <Esc>:call PhpExpandClass()<CR>
-
-

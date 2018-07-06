@@ -33,63 +33,7 @@ set hlsearch						" turn on search results highlighting
 set incsearch						" incremental search until hit return
 
 "-----------MAPPINGS-------------------"
-"map=alias|imap=insertmode|nmap=normalmode"
-
-" Better Save functionality "
-nmap <Leader>w :w<cr>
-
-" Toggle fold "
-nnoremap <s-tab> za
-
-" Quick edit the Vimrc rc "
-nmap <Leader>ev :tabedit $MYVIMRC<cr>
-
-" Quick edit the plugins file "
-nmap <Leader>ep :tabedit ~/.vim/plugins.vim<cr>
-
-" Quick edit a Vim snippets file "
-nmap <Leader>es :e ~/.vim/snippets/
-
-" Simple search highlight removal "
-nmap <Leader><space> :nohlsearch<cr>
-
-" Make NERDTree easier to toggle "
-nmap <Leader>` :NERDTreeToggle<cr>
-
-" Easy search for tags/vars in file "
-nmap <C-R> :CtrlPBufTag<cr>
-
-" Easy search for most recent files "
-nmap <C-E> :CtrlPMRU<cr>
-
-" Shortcut to foldlevel "
-nmap <Leader>t :set foldlevel=
-
-" Sort the PHP use declarations "
-vmap <Leader>su ! awk '{ print length(), $0 \| "sort -n \| cut -d\\  -f2-"}'<cr>
-
-"------------Laravel Maps---------"
-nmap <Leader>lm :!php artisan make:
-
-"-----------SPLIT-MANAGEMENT------"
-set splitbelow
-set splitright
-
-" up
-nmap <C-K> <C-W><C-K>
-" down
-nmap <C-J> <C-W><C-J>
-" left
-nmap <C-H> <C-W><C-H>
-" right
-nmap <C-L> <C-W><C-L>
-
-nmap <S-Right> :vertical res -5<CR>
-nmap <S-Left> :vertical res +5<CR>
-
-" swap
-nmap <C-G> <C-W><C-R>
-
+so ~/.vim/mappings.vim"
 
 "-----------AUTO-COMMANDS---------------"
 " Clear the autocmd buffer, no duplicates | and auto src the vimrc file "
