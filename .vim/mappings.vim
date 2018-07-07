@@ -1,5 +1,7 @@
 "map=alias|imap=insertmode|nmap=normalmode"
 " comments cannot be on same line as mapping
+"
+let mapleader=',' " the default leader is / but i like ,
 
 " Better Save functionality "
 nmap <Leader>w :w<cr>

@@ -30,16 +30,17 @@ Plugin 'garbas/vim-snipmate' " auto snippets
 Plugin 'SirVer/ultisnips' " user defined snippets
 Plugin 'tpope/vim-commentary' " comment stuff out
 "Plugin 'chrisbra/Colorizer' " css/html color highlighting Vim8
+
 " syntax highlighting
 Plugin 'tobyS/vmustache'
 Plugin 'leafgarland/typescript-vim'
-Plugin 'elzr/vim-json'
 Plugin 'jwalton512/vim-blade'
 Plugin 'posva/vim-vue'
 Plugin 'StanAngelOff/php.vim' " php snippets/syntax
 Plugin 'tobyS/pdv' " php documentor
 Plugin 'arnaud-lb/vim-php-namespace' " types use statements for you
 Plugin 'digitaltoad/vim-pug' " pugjs syntax
+Plugin 'elzr/vim-json'
 " other cool things
 Plugin 'chrisbra/csv.vim' " csv viewer
 
@@ -62,7 +63,7 @@ let g:airline_theme='minimalist'
 "let g:autotagTagsFile=".tags"
 
 "----Colorizer----"
-let g:colorizer_auto_filetype='css,html,scss,sass,less,vue,js'
+"let g:colorizer_auto_filetype='css,html,scss,sass,less,vue,js'
 
 "----CTRLP--------"
 let g:ctrlp_custom_ignore='node_modules\|DS_Store\|git\|\.sass_cache\|build'
@@ -84,12 +85,19 @@ let g:WebDevIconsNerdTreeAfterGlyphPadding=' '
 let g:WebDevIconsUnicodeDecorateFolderNodes=1
 
 "----NERDTreeSyntaxHighlighting-----"
-"let g:NERDTreeFileExtensionHighlightFullName=1
-let s:vue_green='39AF78'
-let g:NERDTreeExtensionHighlightColor={}
-let g:NERDTreeExtensionHighlightColor['vue']=s:vue_green
 let g:NERDTreeHighlightFolders=1
 let g:NERDTreeHighlightFoldersFullName=1
+let g:NERDTreeExactMatchHighlightFullName=1
+let g:NERDTreeFileExtensionHighlightFullName=1
+
+let s:vue_green='39AF78'
+let s:pink = "CB6F6F"
+"let s:git_orange = 'F54D27'
+let g:NERDTreeExtensionHighlightColor={}
+let g:NERDTreeExtensionHighlightColor['vue']=s:vue_green
+let g:NERDTreeExactMatchHighlightColor={}
+let g:NERDTreeExactMatchHighlightColor['gulpfile.js']=s:pink
+"let g:NERDTreeExactMatchHighlightColor['.gitignore']=s:git_orange
 "performance issues
 "let g:NERDTreeSyntaxDisableDefaultExtensions=1
 "let g:NERDTreeDisableExactMatchHighlight=1
