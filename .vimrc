@@ -1,40 +1,44 @@
 set nocompatible              				" we want the latest Vim settings
 
-"-----------BASIC------------------"
+"-----BASIC-------------"
 syntax enable
 
-set backspace=indent,eol,start				" make backspace work in edit mode
-set linespace=15											" set GUI linespace
-set autowriteall											" auto write the file when switching buffers
-set complete=.,w,b,u									" set autocomplete references
-set tabstop=2													" number of spaces for a tab
-set shiftwidth=2											" number of spaces for each (auto) indent
-set softtabstop=2											" number of spaces for fake indents
+set backspace=indent,eol,start	" make backspace work in edit mode
+set linespace=15				" set GUI linespace
+set autowriteall				" auto write the file when switching buffers
+set complete=.,w,b,u		" set autocomplete references
+set tabstop=2						" number of spaces for a tab
+set shiftwidth=2				" number of spaces for each (auto) indent
+set softtabstop=2				" number of spaces for fake indents
 
-"-----------VISUALS--------------"
+"-----VISUALS-------------"
 colorscheme atom-dark-256
 set guifont=DroidSansMono\ Nerd\ Font\ Book\ 20
-set encoding=utf8											" default encoding
+set encoding=utf8					" default encoding
 
-set number														" activate line numbers
-set relativenumber										" line numbers +/- relative to cursor
-" set nofoldenable										" disable folding
-set foldmethod=indent									" [manual|indent|expr|marker|syntax|diff]
-set foldlevel=1												" set the initial fold level
-set foldcolumn=2											" where to show the fold indicaton
-" set macligatures										" pretty symbols when available
+set number								" activate line numbers
+set relativenumber				" line numbers +/- relative to cursor
+"set numberwidth=1        " set line number width
+"highlight EndOfBuffer ctermfg=black ctermbg=black " for Vim 8.0
+":hi NonText guifg=bg
+"set nofoldenable					" disable folding
+set foldmethod=indent			" [manual|indent|expr|marker|syntax|diff]
+set foldlevel=1						" set the initial fold level
+set foldcolumn=2					" where to show the fold indicaton
+"set macligatures					" pretty symbols when available
 
-"-----------SEARCHING--------------"
-set hlsearch						" turn on search results highlighting
-set incsearch						" incremental search until hit return
+"-----SEARCHING-----------"
+set hlsearch							" turn on search results highlighting
+set incsearch							" incremental search until hit return
 
-"-----------MAPPINGS-------------------"
+"-----MAPPINGS------------"
 so ~/.vim/mappings.vim"
 
-"-----SOURCE PLUGIN OPTS-----------"
+"-----SOURCE PLUGIN OPTS---"
 so ~/.vim/plugins.vim
 
-"-----------AUTO-COMMANDS---------------"
+"-----AUTO-COMMANDS--------"
+
 " Clear the autocmd buffer, no duplicates | and auto src the vimrc file "
 augroup autosourcing
 	autocmd!

@@ -87,8 +87,8 @@ let g:WebDevIconsUnicodeDecorateFolderNodes=1
 "----NERDTreeSyntaxHighlighting-----"
 let g:NERDTreeHighlightFolders=1
 let g:NERDTreeHighlightFoldersFullName=1
-let g:NERDTreeExactMatchHighlightFullName=1
-let g:NERDTreeFileExtensionHighlightFullName=1
+"let g:NERDTreeExactMatchHighlightFullName=1
+"let g:NERDTreeFileExtensionHighlightFullName=1
 
 let s:vue_green='39AF78'
 let s:pink = "CB6F6F"
@@ -96,7 +96,7 @@ let s:pink = "CB6F6F"
 let g:NERDTreeExtensionHighlightColor={}
 let g:NERDTreeExtensionHighlightColor['vue']=s:vue_green
 let g:NERDTreeExactMatchHighlightColor={}
-let g:NERDTreeExactMatchHighlightColor['gulpfile.js']=s:pink
+"let g:NERDTreeExactMatchHighlightColor['gulpfile.js']=s:pink
 "let g:NERDTreeExactMatchHighlightColor['.gitignore']=s:git_orange
 "performance issues
 "let g:NERDTreeSyntaxDisableDefaultExtensions=1
