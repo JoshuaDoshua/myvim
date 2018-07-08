@@ -40,6 +40,7 @@ Plugin 'StanAngelOff/php.vim' " php snippets/syntax
 Plugin 'tobyS/pdv' " php documentor
 Plugin 'arnaud-lb/vim-php-namespace' " types use statements for you
 Plugin 'digitaltoad/vim-pug' " pugjs syntax
+Plugin 'pangloss/vim-javascript'
 Plugin 'elzr/vim-json'
 " other cool things
 Plugin 'chrisbra/csv.vim' " csv viewer
@@ -54,6 +55,10 @@ Plugin 'ryanoasis/vim-devicons' " nerd-font integration
 
 call vundle#end()		" required
 filetype plugin indent on	" required
+
+"----Javascript---"
+"set conceallevel=1
+"let g:javascript_conceal_arrow_function='⇒'
 
 "----Airline------"
 let g:airline_powerline_fonts=1
