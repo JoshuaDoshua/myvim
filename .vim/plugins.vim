@@ -18,7 +18,7 @@ Plugin 'ctrlpvim/ctrlp.vim' " file searcher
 Plugin 'vim-airline/vim-airline' " info bar at bottom
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree' " directory browser
-"Plugin 'Xuyuanp/nerdtree-git-plugin' " git icons in nerdtree
+Plugin 'Xuyuanp/nerdtree-git-plugin' " git icons in nerdtree
 Plugin 'tpope/vim-sleuth' " auto-adjust indent options based on current file
 Plugin 'Chiel92/vim-autoformat' " quick formatting
 Plugin 'majutsushi/tagbar' " vim tagbar document summary
@@ -123,6 +123,20 @@ let g:webdevicons_enable=1
 let g:webdevicons_enable_nerdtree=1
 let g:WebDevIconsNerdTreeAfterGlyphPadding=' '
 let g:WebDevIconsUnicodeDecorateFolderNodes=1
+let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols = {} " needed
+let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['.gitignore'] = ""
+let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['.jekins'] = ""
+let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['.gitkeep'] = ""
+"let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['.git'] = ""
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {} " needed
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['lock'] = ''
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['woff'] = ''
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['woff2'] = ''
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['eot'] = ''
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['otf'] = ''
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['ttf'] = ''
+"let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['svg'] = '縉'
+
 
 "----NERDTreeSyntaxHighlighting-----"
 let g:NERDTreeHighlightFolders=1
@@ -132,18 +146,18 @@ let g:NERDTreeHighlightFoldersFullName=1
 
 let s:vue_green='39AF78'
 let s:pink = "CB6F6F"
-"let s:git_orange = 'F54D27'
+let s:git_orange = 'F54D27'
 let g:NERDTreeExtensionHighlightColor={}
 let g:NERDTreeExtensionHighlightColor['vue']=s:vue_green
 let g:NERDTreeExactMatchHighlightColor={}
 "let g:NERDTreeExactMatchHighlightColor['gulpfile.js']=s:pink
-"let g:NERDTreeExactMatchHighlightColor['.gitignore']=s:git_orange
+let g:NERDTreeExactMatchHighlightColor['.gitignore']=s:git_orange
 "performance issues
-"let g:NERDTreeSyntaxDisableDefaultExtensions=1
 "let g:NERDTreeDisableExactMatchHighlight=1
 "let g:NERDTreeDisablePatternMatchHighlight=1
+"let g:NERDTreeSyntaxDisableDefaultExtensions=1
 "let g:NERDTreeSyntaxEnabledExtensions=['php','js','css','sass','scss','vue']
-let g:NERDTreeHighlightCursorLine=0
+"let g:NERDTreeHighlightCursorLine=0
 
 "----PDV----------"
 let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
