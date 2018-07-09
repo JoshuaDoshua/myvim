@@ -18,13 +18,12 @@ Plugin 'ctrlpvim/ctrlp.vim' " file searcher
 Plugin 'vim-airline/vim-airline' " info bar at bottom
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree' " directory browser
-Plugin 'tiagofumo/vim-nerdtree-syntax-highlight' " colored nerd tree
 "Plugin 'Xuyuanp/nerdtree-git-plugin' " git icons in nerdtree
 Plugin 'tpope/vim-sleuth' " auto-adjust indent options based on current file
 Plugin 'Chiel92/vim-autoformat' " quick formatting
 Plugin 'majutsushi/tagbar' " vim tagbar document summary
 Plugin 'docunext/closetag.vim' " smart html close tags
-Plugin 'Yggdroot/indentLine' " spaced indent chars
+"Plugin 'Yggdroot/indentLine' " spaced indent chars
 "Plugin 'nathanaelkane/vim-indent-guides' " indent highlighting
 " <Leader>ig
 
@@ -39,8 +38,9 @@ Plugin 'tpope/vim-commentary' " comment stuff out
 Plugin 'shmargum/vim-sass-colors' " sass var color highlighting
 
 " syntax highlighting
+Plugin 'flazz/vim-colorschemes'
 Plugin 'tobyS/vmustache'
-Plugin 'leafgarland/typescript-vim'
+"Plugin 'leafgarland/typescript-vim'
 Plugin 'jwalton512/vim-blade'
 Plugin 'posva/vim-vue'
 Plugin 'StanAngelOff/php.vim' " php snippets/syntax
@@ -61,6 +61,7 @@ Plugin 'chrisbra/csv.vim' " csv viewer
 
 " call last
 Plugin 'ryanoasis/vim-devicons' " nerd-font integration
+Plugin 'tiagofumo/vim-nerdtree-syntax-highlight' " colored nerd tree
 
 call vundle#end()		" required
 filetype plugin indent on	" required
@@ -96,7 +97,7 @@ let g:ctrlp_match_window='min:1,max:30,results:30'
 "----NERDTree-----"
 let g:NERDTreeHijackNetrw=0
 let g:NERDTreeShowHidden=1
-let g:NERDTreeIgnore=['\.swp*','\.swo$']
+let g:NERDTreeIgnore=['\.swp*','\.swo$','^.git$']
 let g:NERDTreeMinimalUI=1
 "let g:NERDTreeDirArrowExpandable=">"
 " open nerd tree if no file

@@ -1,8 +1,6 @@
 set nocompatible " we want the latest Vim settings
 
 "-----BASIC-------------"
-syntax enable
-
 set encoding=utf8 " default encoding
 set backspace=indent,eol,start " make backspace work in edit mode
 set linespace=15 " set GUI linespace
@@ -15,7 +13,11 @@ set softtabstop=2 " number of spaces for fake indents
 "set showtabline=0
 
 "-----VISUALS-------------"
+syntax enable
 colorscheme atom-dark-256
+colorscheme monokai
+"set cursorline
+"hi CursorLine term=bold cterm=bold guibg=Grey40
 set guifont=DroidSansMono\ Nerd\ Font\ Book\ 20
 
 set number " activate line numbers
