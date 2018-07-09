@@ -1,4 +1,4 @@
-filetype off			" required
+filetype off " required
 
 " set the runtime path to include Vundle and intialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -14,7 +14,7 @@ Plugin 'tpope/vim-fugitive' " repo stuff
 " visual/ide/editor
 Plugin 'tpope/vim-vinegar' " dash browser
 Plugin 'ctrlpvim/ctrlp.vim' " file searcher
-Plugin 'airblade/vim-gitgutter' " git icons in gutters
+"Plugin 'airblade/vim-gitgutter' " git icons in gutters
 Plugin 'vim-airline/vim-airline' " info bar at bottom
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree' " directory browser
@@ -23,6 +23,10 @@ Plugin 'tiagofumo/vim-nerdtree-syntax-highlight' " colored nerd tree
 Plugin 'tpope/vim-sleuth' " auto-adjust indent options based on current file
 Plugin 'Chiel92/vim-autoformat' " quick formatting
 Plugin 'majutsushi/tagbar' " vim tagbar document summary
+Plugin 'docunext/closetag.vim' " smart html close tags
+Plugin 'Yggdroot/indentLine' " spaced indent chars
+"Plugin 'nathanaelkane/vim-indent-guides' " indent highlighting
+" <Leader>ig
 
 " common snippets
 Plugin 'ervandew/supertab' " tab completions
@@ -31,6 +35,8 @@ Plugin 'garbas/vim-snipmate' " auto snippets
 Plugin 'SirVer/ultisnips' " user defined snippets
 Plugin 'tpope/vim-commentary' " comment stuff out
 "Plugin 'chrisbra/Colorizer' " css/html color highlighting Vim8
+"Plugin 'ap/vim-css-color' " css color highlighting
+Plugin 'shmargum/vim-sass-colors' " sass var color highlighting
 
 " syntax highlighting
 Plugin 'tobyS/vmustache'
@@ -62,6 +68,16 @@ filetype plugin indent on	" required
 "----Javascript---"
 "set conceallevel=1
 "let g:javascript_conceal_arrow_function='⇒'
+
+"----IndentLine---"
+"let g:indentLine_char = 'c'
+
+"----IndentGuides-"
+" let g:indent_guides_auto_colors = 0
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
+" let g:indent_guides_start_level=2
+" let g:indent_guides_guide_size=1
 
 "----Airline------"
 let g:airline_powerline_fonts=1
