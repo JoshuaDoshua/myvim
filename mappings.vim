@@ -4,31 +4,37 @@
 let mapleader=',' " the default leader is / but i like ,
 
 " Better Save functionality "
-nmap <Leader>w :w<cr>
+nmap <Leader>w :w<CR>
 
 " Toggle fold "
 nnoremap <s-tab> za
 
 " Quick edit the Vimrc rc "
-nmap <Leader>ev :tabedit $MYVIMRC<cr>
+nmap <Leader>ev :tabedit $MYVIMRC<CR>
 
 " Quick edit the plugins file "
-nmap <Leader>ep :tabedit ~/.vim/plugins.vim<cr>
+nmap <Leader>ep :tabedit ~/.vim/plugins.vim<CR>
 
 " Quick edit the mappings file "
-nmap <Leader>em :tabedit ~/.vim/mappings.vim<cr>
+nmap <Leader>em :tabedit ~/.vim/mappings.vim<CR>
 
 " Quick edit a Vim snippets file "
 nmap <Leader>es :e ~/.vim/snippets/
 
 " Simple search highlight removal "
-nmap <Leader><space> :nohlsearch<cr>
+nmap <Leader><space> :nohlsearch<CR>
 
 " Shortcut to foldlevel "
-nmap <Leader>t :set foldlevel=
+nmap <Leader>f :set foldlevel=
 
 " Sort the PHP use declarations "
-vmap <Leader>su ! awk '{ print length(), $0 \| "sort -n \| cut -d\\  -f2-"}'<cr>
+nmap <Leader>su ! awk '{ print length(), $0 \| "sort -n \| cut -d\\  -f2-"}'<CR>
+
+" navigate tabs
+nnoremap <C-tab> :tabnext<CR>
+nnoremap <C-S-tab> :tabprevious<CR>
+inoremap <C-tab> <Esc>:tabnext<CR>
+inoremap <C-tab> <Esc>:tabnext<CR>
 
 "------------LARAVEL-MAPS---------"
 nmap <Leader>lm :!php artisan make:
@@ -36,19 +42,22 @@ nmap <Leader>lm :!php artisan make:
 "-----------PLUGIN-MAPS----------"
 
 " Make NERDTree easier to toggle "
-nmap <Leader>` :NERDTreeToggle<cr>
+nmap <Leader>` :NERDTreeToggle<CR>
 
 " Easy search for tags/vars in file "
-nmap <C-R> :CtrlPBufTag<cr>
+nmap <C-R> :CtrlPBufTag<CR>
 
 " Easy search for most recent files "
-nmap <C-E> :CtrlPMRU<cr>
+nmap <C-E> :CtrlPMRU<CR>
 
 " Show GitGutter line diff highlights
-nmap <Leader>gd :GitGutterLineHighlightsToggle<cr>
+nmap <Leader>gd :GitGutterLineHighlightsToggle<CR>
 
 " Toggle Tag Bar document summary
-nmap <Leader>ds :TagbarToggle<cr>
+nmap <Leader>ds :TagbarToggle<CR>
+
+" delete blank lines
+nmap <Leader>dab :g/^$/d<CR>
 
 " PDV document
 autocmd FileType php noremap <Leader>d :call pdv#DocumentWithSnip()<CR>
@@ -69,6 +78,9 @@ endfunction
 autocmd FileType php inoremap <Leader>f <Esc>:call IPhpExpandClass()<CR>
 autocmd FileType php noremap <Leader>f <Esc>:call PhpExpandClass()<CR>
 
+autocmd FileType php inoremap <Leader>sa <Esc>:call PhpSortUse()<CR>
+autocmd FileType php noremap <Leader>sa <Esc>:call PhpSortUse()<CR>
+
 "-----------SPLIT-MANAGEMENT------"
 set splitbelow
 set splitright
@@ -81,7 +93,7 @@ nmap <C-K> <C-W><C-K>
 " focus down
 nmap <C-J> <C-W><C-J>
 " adjust sizes
-nmap <S-Right> :vertical res -5<CR>
-nmap <S-Left> :vertical res +5<CR>
+nmap <S-Right> :vertical res +5<CR>
+nmap <S-Left> :vertical res -5<CR>
 " swap
 nmap <C-G> <C-W><C-R>
