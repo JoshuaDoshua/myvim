@@ -14,11 +14,12 @@ Plugin 'tpope/vim-fugitive' " repo stuff
 " visual/ide/editor
 Plugin 'tpope/vim-vinegar' " dash browser
 Plugin 'ctrlpvim/ctrlp.vim' " file searcher
-"Plugin 'airblade/vim-gitgutter' " git icons in gutters
+Plugin 'airblade/vim-gitgutter' " git icons in gutters
 Plugin 'vim-airline/vim-airline' " info bar at bottom
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree' " directory browser
 Plugin 'Xuyuanp/nerdtree-git-plugin' " git icons in nerdtree
+Plugin 'tiagofumo/vim-nerdtree-syntax-highlight' " colored nerd tree
 Plugin 'tpope/vim-sleuth' " auto-adjust indent options based on current file
 Plugin 'Chiel92/vim-autoformat' " quick formatting
 Plugin 'majutsushi/tagbar' " vim tagbar document summary
@@ -62,7 +63,6 @@ Plugin 'dhruvasagar/vim-table-mode' " md tables
 
 " call last
 Plugin 'ryanoasis/vim-devicons' " nerd-font integration
-Plugin 'tiagofumo/vim-nerdtree-syntax-highlight' " colored nerd tree
 
 call vundle#end()		" required
 filetype plugin indent on	" required
@@ -124,11 +124,12 @@ let g:webdevicons_enable=1
 let g:webdevicons_enable_nerdtree=1
 let g:WebDevIconsNerdTreeAfterGlyphPadding=' '
 let g:WebDevIconsUnicodeDecorateFolderNodes=1
+
 let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols = {} " needed
 let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['.gitignore'] = ""
-let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['.jekins'] = ""
+let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['.jenkins'] = ""
 let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['.gitkeep'] = ""
-"let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['.git'] = ""
+
 let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {} " needed
 let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['lock'] = ''
 let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['woff'] = ''
@@ -138,7 +139,6 @@ let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['otf'] = ''
 let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['ttf'] = ''
 "let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['svg'] = '縉'
 
-
 "----NERDTreeSyntaxHighlighting-----"
 let g:NERDTreeHighlightFolders=1
 let g:NERDTreeHighlightFoldersFullName=1
@@ -146,13 +146,16 @@ let g:NERDTreeHighlightFoldersFullName=1
 "let g:NERDTreeFileExtensionHighlightFullName=1
 
 let s:vue_green='39AF78'
-let s:pink = "CB6F6F"
 let s:git_orange = 'F54D27'
+let s:jenkins = 'EED0AE'
+
 let g:NERDTreeExtensionHighlightColor={}
 let g:NERDTreeExtensionHighlightColor['vue']=s:vue_green
+
 let g:NERDTreeExactMatchHighlightColor={}
-"let g:NERDTreeExactMatchHighlightColor['gulpfile.js']=s:pink
 let g:NERDTreeExactMatchHighlightColor['.gitignore']=s:git_orange
+let g:NERDTreeExactMatchHighlightColor['.jenkins']=s:jenkins
+
 "performance issues
 "let g:NERDTreeDisableExactMatchHighlight=1
 "let g:NERDTreeDisablePatternMatchHighlight=1
