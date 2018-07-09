@@ -52,6 +52,7 @@ Plugin 'elzr/vim-json'
 
 " other cool things
 Plugin 'chrisbra/csv.vim' " csv viewer
+Plugin 'dhruvasagar/vim-table-mode' " md tables
 "Plugin 'mhinz/vim-startify' " fancy start screen
 
 " Plugin 'terryma/vim-multiple-cursors'
