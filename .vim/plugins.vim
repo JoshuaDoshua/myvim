@@ -19,6 +19,7 @@ Plugin 'vim-airline/vim-airline' " info bar at bottom
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree' " directory browser
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight' " colored nerd tree
+"Plugin 'Xuyuanp/nerdtree-git-plugin' " git icons in nerdtree
 Plugin 'tpope/vim-sleuth' " auto-adjust indent options based on current file
 Plugin 'Chiel92/vim-autoformat' " quick formatting
 Plugin 'majutsushi/tagbar' " vim tagbar document summary
@@ -42,8 +43,10 @@ Plugin 'arnaud-lb/vim-php-namespace' " types use statements for you
 Plugin 'digitaltoad/vim-pug' " pugjs syntax
 Plugin 'pangloss/vim-javascript'
 Plugin 'elzr/vim-json'
+
 " other cool things
 Plugin 'chrisbra/csv.vim' " csv viewer
+"Plugin 'mhinz/vim-startify' " fancy start screen
 
 " Plugin 'terryma/vim-multiple-cursors'
 " Plugin 'junegunn/vim-easy-align' " easy alignments
@@ -78,10 +81,25 @@ let g:ctrlp_match_window='min:1,max:30,results:30'
 let g:NERDTreeHijackNetrw=0
 let g:NERDTreeShowHidden=1
 let g:NERDTreeIgnore=['\.swp*','\.swo$']
+let g:NERDTreeMinimalUI=1
 "let g:NERDTreeDirArrowExpandable=">"
 " open nerd tree if no file
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+"----NERDTree Git-----"
+" let g:NERDTreeIndicatorMapCustom = {
+"     \ "Modified"  : "✹",
+"     \ "Staged"    : "✚",
+"     \ "Untracked" : "✭",
+"     \ "Renamed"   : "➜",
+"     \ "Unmerged"  : "═",
+"     \ "Deleted"   : "✖",
+"     \ "Dirty"     : "✗",
+"     \ "Clean"     : "✔︎",
+"     \ 'Ignored'   : '☒',
+"     \ "Unknown"   : "?"
+" \ }
 
 "----DevIcons-----"
 let g:webdevicons_enable=1
