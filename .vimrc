@@ -20,6 +20,7 @@ colorscheme monokai
 "hi CursorLine term=bold cterm=bold guibg=Grey40
 set guifont=DroidSansMono\ Nerd\ Font\ Book\ 20
 
+set noshowmode " we use airline to display modes
 set number " activate line numbers
 set relativenumber " line numbers +/- relative to cursor
 "set numberwidth=1 " set line number width
