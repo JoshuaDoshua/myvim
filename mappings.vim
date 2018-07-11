@@ -25,7 +25,7 @@ nmap <Leader>es :e ~/.vim/snippets/
 nmap <Leader><space> :nohlsearch<CR>
 
 " Shortcut to foldlevel "
-nmap <Leader>f :set foldlevel=
+nmap <Leader>t :set foldlevel=
 
 " Sort the PHP use declarations "
 nmap <Leader>su ! awk '{ print length(), $0 \| "sort -n \| cut -d\\  -f2-"}'<CR>

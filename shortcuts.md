@@ -154,7 +154,7 @@ Custom leader is `,`
 
 | Keys | Command              |
 |------+----------------------|
-| ,~   | toggle browser*      |
+| ,~   | toggle browser       |
 | O    | recursively open     |
 | X    | recursively close    |
 | s    | open split           |
@@ -168,12 +168,12 @@ Custom leader is `,`
 
 | Keys  | Command                        |
 |-------+--------------------------------|
-| cs^*  | change surrounding ^ to *      |
-| cst*  | change surrounding tag to *    |
-| ds*   | delete surrounding *           |
-| ysiw* | add surrounding * to word      |
+| cs^#  | change surrounding ^ to #      |
+| cst#  | change surrounding tag to #    |
+| ds#   | delete surrounding #           |
+| ysiw# | add surrounding # to word      |
 | cs{   | surround with `{`, no spaces   |
-| yss*  | wrap entire line with *        |
+| yss#  | wrap entire line with #        |
 | VSt   | wrap entire line with html tag |
 
 [Vim TableMode](https://github.com/dhruvasagar/vim-table-mode)
@@ -296,3 +296,24 @@ also [Vim-SnipMate](https://github.com/garbas/vim-snipmate)
 seriously, way too many
 
 
+## Other Snippets
+
+**Move files via SCP**
+
+```
+# copy from remote to local
+scp un@remote:/path/to/file.txt /path/to/local
+
+# copy from local to remote
+scp file.txt un@remote:/path/to/dir/
+
+# copy from remote to remote
+scp un@remote:/path/to/file.txt \ un@remote:/path/to/dir/
+
+# requires port?
+scp -P 2264 file.txt un@remote:/path/to/dir/
+```
+
+**MySQL import dump**
+
+`mysql -u un -p database_name < file.sql`
