@@ -298,6 +298,12 @@ seriously, way too many
 
 ## Other Snippets
 
+### SSH
+
+**SSH specified key**
+
+`ssh -i /path/to/key.pem UN@REMOTE
+
 **Move files via SCP**
 
 ```
@@ -314,6 +320,20 @@ scp un@remote:/path/to/file.txt \ un@remote:/path/to/dir/
 scp -P 2264 file.txt un@remote:/path/to/dir/
 ```
 
-**MySQL import dump**
+## TAR
 
-`mysql -u un -p database_name < file.sql`
+**create tar.gz**
+`tar -zcvf FILE.tar.gz SOURCE`
+
+**extract tar.gz**
+`tar -zxvf FILE.tar.gz`
+
+### MySQL
+
+**import local file**
+`mysql -u UN -p DBNAME < file.sql`
+
+**export remote database**
+`mysqldump -h HOST -u UN -p DBNAME > file.sql`
+
+
