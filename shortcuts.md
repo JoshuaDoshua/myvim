@@ -336,4 +336,47 @@ scp -P 2264 file.txt un@remote:/path/to/dir/
 **export remote database**
 `mysqldump -h HOST -u UN -p DBNAME > file.sql`
 
+### SED
 
+**find/replace all in file
+```
+sed -i 's/OLD/NEW/g' FILE.txt
+# on osx
+sed -i '' 's/OLD/NEW/g' FILE.txt
+
+# only if matches FOO
+sed -i '/foo/s/bar/baz/g'
+# only if !matches FOO
+sed -i '/foo/!s/bar/baz/g'
+# replace multiple to one
+sed -i 's/scarlet/red/g;s/ruby/red/g'
+# gnu multiple
+sed -i 's/scarlet|ruby/red/g'
+```
+
+**adjust file line spaces**
+```
+# double space
+sed G
+# already has some, but no more than 1
+sed '/^$/d;G'
+# triple space
+sed 'G;G'
+# insert line above pattern
+sed '/regex/{x;p;x;}'
+# insert line below pattern
+sed '/regex/G'
+# insert line above and below pattern
+sed '/regex/{x;p;x;G;}'
+# delete all blank lines
+sed '^$/d'
+# count lines
+sed -n '$='
+# delete trailing whitespace per line
+sed 's/[ t]*$//'
+# add commas to numerbers
+gsed ':a;s/B[0-9]{3}>/,&/;ta'                     # GNU sed
+sed -e :a -e 's/(.*[0-9])([0-9]{3})/1,2/;ta'  # other seds
+```
+
+[more](https://whircat.centosprime.com/sed-one-liners/)
