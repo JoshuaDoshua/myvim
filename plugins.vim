@@ -34,9 +34,9 @@ Plugin 'tpope/vim-surround' " alter surrounding text
 Plugin 'garbas/vim-snipmate' " auto snippets
 Plugin 'SirVer/ultisnips' " user defined snippets
 Plugin 'tpope/vim-commentary' " comment stuff out
-"Plugin 'chrisbra/Colorizer' " css/html color highlighting Vim8
+Plugin 'chrisbra/Colorizer' " css/html color highlighting Vim8
 "Plugin 'ap/vim-css-color' " css color highlighting
-Plugin 'shmargum/vim-sass-colors' " sass var color highlighting
+"Plugin 'shmargum/vim-sass-colors' " sass var color highlighting
 
 " syntax highlighting
 Plugin 'flazz/vim-colorschemes'
