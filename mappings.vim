@@ -39,6 +39,12 @@ inoremap <C-tab> <Esc>:tabnext<CR>
 "------------LARAVEL-MAPS---------"
 nmap <Leader>lm :!php artisan make:
 
+"------------NG-MAPS-------------"
+nmap <Leader>ngg :!ng generate
+nmap <Leader>ngc :!ng generate component 
+nmap <Leader>ngs :!ng generate service 
+nmap <Leader>ngm :!ng generate module
+
 "-----------PLUGIN-MAPS----------"
 
 " Make NERDTree easier to toggle "
@@ -93,7 +99,7 @@ nmap <C-K> <C-W><C-K>
 " focus down
 nmap <C-J> <C-W><C-J>
 " adjust sizes
-nmap <S-Right> :vertical res +5<CR>
-nmap <S-Left> :vertical res -5<CR>
+nmap <S-Right> :vertical res -5<CR>
+nmap <S-Left> :vertical res +5<CR>
 " swap
 nmap <C-G> <C-W><C-R>

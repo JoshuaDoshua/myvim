@@ -20,7 +20,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree' " directory browser
 Plugin 'Xuyuanp/nerdtree-git-plugin' " git icons in nerdtree
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight' " colored nerd tree
-Plugin 'tpope/vim-sleuth' " auto-adjust indent options based on current file
+"Plugin 'tpope/vim-sleuth' " auto-adjust indent options based on current file
 Plugin 'Chiel92/vim-autoformat' " quick formatting
 Plugin 'majutsushi/tagbar' " vim tagbar document summary
 Plugin 'docunext/closetag.vim' " smart html close tags
@@ -40,8 +40,8 @@ Plugin 'chrisbra/Colorizer' " css/html color highlighting Vim8
 
 " syntax highlighting
 Plugin 'flazz/vim-colorschemes'
-Plugin 'tobyS/vmustache'
-"Plugin 'leafgarland/typescript-vim'
+"Plugin 'tobyS/vmustache'
+Plugin 'leafgarland/typescript-vim'
 Plugin 'jwalton512/vim-blade'
 Plugin 'posva/vim-vue'
 Plugin 'StanAngelOff/php.vim' " php snippets/syntax
@@ -52,7 +52,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'elzr/vim-json'
 
 " other cool things
-Plugin 'chrisbra/csv.vim' " csv viewer
+"Plugin 'chrisbra/csv.vim' " csv viewer
 Plugin 'dhruvasagar/vim-table-mode' " md tables
 "Plugin 'mhinz/vim-startify' " fancy start screen
 
@@ -132,6 +132,7 @@ let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['.gitkeep'] = ""
 
 let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {} " needed
 let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['lock'] = ''
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['map'] = ''
 let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['woff'] = ''
 let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['woff2'] = ''
 let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['eot'] = ''
