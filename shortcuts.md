@@ -9,7 +9,7 @@ Custom leader is `,`
 ### Navigation
 
 | Keys  | Command                         |
-|-------+---------------------------------|
+|-------|---------------------------------|
 | h     | move left                       |
 | j     | move down                       |
 | k     | move up                         |
@@ -32,7 +32,7 @@ Custom leader is `,`
 ### Insert/Append Text
 
 | Keys  | Command                            |
-|-------+------------------------------------|
+|-------|------------------------------------|
 | i     | enter insert mode                  |
 | I     | enter insert mode at start of line |
 | a     | append after cursor                |
@@ -45,7 +45,7 @@ Custom leader is `,`
 ### Editing
 
 | Keys  | Command                      |
-|-------+------------------------------|
+|-------|------------------------------|
 | r     | replace single char          |
 | J     | join with line below         |
 | cc    | replace entire line (insert) |
@@ -63,7 +63,7 @@ Custom leader is `,`
 ### Cut and Paste
 
 | Keys | Command               |
-|------+-----------------------|
+|------|-----------------------|
 | dd   | cut a line            |
 | dw   | delete word           |
 | x    | delete char           |
@@ -79,7 +79,7 @@ Custom leader is `,`
 ### Visual Mode
 
 | Keys  | Command                 |
-|-------+-------------------------|
+|-------|-------------------------|
 | v     | enter visual mode       |
 | V     | enter line visual mode  |
 | <C-v> | enter visual block mode |
@@ -88,7 +88,7 @@ Custom leader is `,`
 ## Exiting
 
 | Keys | Command         |
-|------+-----------------|
+|------|-----------------|
 | :w   | save            |
 | :wq  | save and quit   |
 | :x   | :wq             |
@@ -98,7 +98,7 @@ Custom leader is `,`
 ## Search/Replace
 
 | Keys                  | Command              |
-|-----------------------+----------------------|
+|-----------------------|----------------------|
 | /pattern              | search for a pattern |
 | n                     | move to next found   |
 | N                     | move to prev found   |
@@ -108,7 +108,7 @@ Custom leader is `,`
 ## Multiple Files
 
 | Keys  | Command                 |
-|-------+-------------------------|
+|-------|-------------------------|
 | :e    | edit file in new buffer |
 | :tabe | edit file in new tab    |
 | :sp   | open new file in split  |
@@ -116,7 +116,7 @@ Custom leader is `,`
 ## Tabs
 
 | Keys      | Command       |
-|-----------+---------------|
+|-----------|---------------|
 | <C-tab>   | next tab      |
 | <C-S-tab> | prev tab      |
 | :tabr     | first tab     |
@@ -127,7 +127,7 @@ Custom leader is `,`
 ## Custom
 
 | Keys      | Command                  |
-|-----------+--------------------------|
+|-----------|--------------------------|
 | ,w        | quick save               |
 | za        | toggle fold              |
 | ,ev       | edit vim config          |
@@ -153,7 +153,7 @@ Custom leader is `,`
 [Vim NERDTree](https://github.com/scrooloose/nerdtree)
 
 | Keys | Command              |
-|------+----------------------|
+|------|----------------------|
 | ,~   | toggle browser       |
 | O    | recursively open     |
 | X    | recursively close    |
@@ -167,7 +167,7 @@ Custom leader is `,`
 [Vim Surround](https://github.com/tpope/vim-surround)
 
 | Keys  | Command                        |
-|-------+--------------------------------|
+|-------|--------------------------------|
 | cs^#  | change surrounding ^ to #      |
 | cst#  | change surrounding tag to #    |
 | ds#   | delete surrounding #           |
@@ -179,7 +179,7 @@ Custom leader is `,`
 [Vim TableMode](https://github.com/dhruvasagar/vim-table-mode)
 
 | Keys         | Command                |
-|--------------+------------------------|
+|--------------|------------------------|
 | ,tm          | toggle table mode      |
 | ,tdd         | delete entire row      |
 | ,tdc         | delete entire column   |
@@ -188,13 +188,13 @@ Custom leader is `,`
 [Vim TagBar](https://github.com/majutsushi/tagbar)
 
 | Keys | Command                   |
-|------+---------------------------|
+|------|---------------------------|
 | ,ds  | Document Summary (toggle) |
 
 [Vim GitGutter](https://github.com/airblade/vim-gitgutter)
 
 | Keys | Command           |
-|------+-------------------|
+|------|-------------------|
 | ,gd  | toggle git gutter |
 | [c   | next change       |
 | ]c   | prev change       |
@@ -205,13 +205,13 @@ Custom leader is `,`
 [PDV](https://github.com/tobyS/pdv)
 
 | Keys | Command         |
-|------+-----------------|
+|------|-----------------|
 | ,d   | create docblock |
 
 [Php Namespace](https://github.com/arnaud-lb/vim-php-namespace)
 
 | Keys | Command                   |
-|------+---------------------------|
+|-------------------------------|
 | ,n   | insert use statement      |
 | ,f   | expand to full class name |
 | ,sa  | sort uses alphabetically  |
@@ -219,14 +219,14 @@ Custom leader is `,`
 [Vim Fugitive](https://github.com/tpope/vim-fugitive)
 
 | Keys     | Command         |
-|----------+-----------------|
+|----------|-----------------|
 | :Gdiff   | pretty git diff |
 | :Gstatus | git status      |
 
 [Vim Vinegar Browser](https://github.com/tpope/vim-vinegar)
 
 | Keys | Command                    |
-|------+----------------------------|
+|------|----------------------------|
 | -    | open browser               |
 | .    | prepopulate filename on cl |
 | y    | yank absolute path of file |
@@ -234,7 +234,7 @@ Custom leader is `,`
 [Vim AutoFormat](https://github.com/Chiel92/vim-autoformat)
 
 | Keys                  | Command              |
-|-----------------------+----------------------|
+|-----------------------|----------------------|
 | :Autoformat           | need to map shortcut |
 | :retab                | fix tabs             |
 | :RemoveTrailingSpaces | duh                  |
@@ -242,7 +242,7 @@ Custom leader is `,`
 [Vim Commentary](https://github.com/tpope/vim-commentary)
 
 | Keys | Command             |
-|------+---------------------|
+|------|---------------------|
 | gc   | comment selection   |
 | gcc  | comment entire line |
 
@@ -254,14 +254,14 @@ also [Vim-SnipMate](https://github.com/garbas/vim-snipmate)
 ### JS
 
 | Snippet | Expanded              |
-|---------+-----------------------|
+|---------|-----------------------|
 | =fn     | equals function       |
 | $click  | jquery click function |
 
 ### PHP
 
 | Snippet        | Expanded               |
-|----------------+------------------------|
+|----------------|------------------------|
 | <?             | <?php                  |
 | ns             | namespace              |
 | fn             | function               |
