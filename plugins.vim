@@ -34,26 +34,26 @@ Plugin 'tpope/vim-surround' " alter surrounding text
 Plugin 'garbas/vim-snipmate' " auto snippets
 Plugin 'SirVer/ultisnips' " user defined snippets
 Plugin 'tpope/vim-commentary' " comment stuff out
-Plugin 'chrisbra/Colorizer' " css/html color highlighting Vim8
+"Plugin 'chrisbra/Colorizer' " css/html color highlighting Vim8
 "Plugin 'ap/vim-css-color' " css color highlighting
 "Plugin 'shmargum/vim-sass-colors' " sass var color highlighting
 
 " syntax highlighting
-Plugin 'flazz/vim-colorschemes'
+"Plugin 'flazz/vim-colorschemes'
 "Plugin 'tobyS/vmustache'
 Plugin 'leafgarland/typescript-vim'
-Plugin 'jwalton512/vim-blade'
-Plugin 'posva/vim-vue'
+"Plugin 'jwalton512/vim-blade'
+"Plugin 'posva/vim-vue'
 Plugin 'StanAngelOff/php.vim' " php snippets/syntax
 Plugin 'tobyS/pdv' " php documentor
 Plugin 'arnaud-lb/vim-php-namespace' " types use statements for you
-Plugin 'digitaltoad/vim-pug' " pugjs syntax
+"Plugin 'digitaltoad/vim-pug' " pugjs syntax
 Plugin 'pangloss/vim-javascript'
 Plugin 'elzr/vim-json'
 
 " other cool things
 "Plugin 'chrisbra/csv.vim' " csv viewer
-Plugin 'dhruvasagar/vim-table-mode' " md tables
+"Plugin 'dhruvasagar/vim-table-mode' " md tables
 "Plugin 'mhinz/vim-startify' " fancy start screen
 
 " Plugin 'terryma/vim-multiple-cursors'
