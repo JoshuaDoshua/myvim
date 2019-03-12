@@ -211,7 +211,7 @@ Custom leader is `,`
 [Php Namespace](https://github.com/arnaud-lb/vim-php-namespace)
 
 | Keys | Command                   |
-|-------------------------------|
+|------|---------------------------|
 | ,n   | insert use statement      |
 | ,f   | expand to full class name |
 | ,sa  | sort uses alphabetically  |
@@ -302,7 +302,9 @@ seriously, way too many
 
 **SSH specified key**
 
-`ssh -i /path/to/key.pem UN@REMOTE
+```
+ssh -i /path/to/key.pem UN@REMOTE
+```
 
 **Move files via SCP**
 
@@ -323,18 +325,26 @@ scp -P 2264 file.txt un@remote:/path/to/dir/
 ## TAR
 
 **create tar.gz**
-`tar -zcvf FILE.tar.gz SOURCE`
+```
+tar -zcvf FILE.tar.gz SOURCE
+```
 
 **extract tar.gz**
-`tar -zxvf FILE.tar.gz`
+```
+tar -zxvf FILE.tar.gz
+```
 
 ### MySQL
 
 **import local file**
-`mysql -u UN -p DBNAME < file.sql`
+```
+mysql -u UN -p DBNAME < file.sql
+```
 
 **export remote database**
-`mysqldump -h HOST -u UN -p DBNAME > file.sql`
+```
+mysqldump -h HOST -u UN -p DBNAME > file.sql
+```
 
 ### SED
 
@@ -379,4 +389,4 @@ gsed ':a;s/B[0-9]{3}>/,&/;ta'                     # GNU sed
 sed -e :a -e 's/(.*[0-9])([0-9]{3})/1,2/;ta'  # other seds
 ```
 
-[more](https://whircat.centosprime.com/sed-one-liners/)
+[more sed stuff](https://whircat.centosprime.com/sed-one-liners/)
